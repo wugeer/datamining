@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4d3754f5-5a64-4707-a8fc-091cec943958" name="207_edw_ai" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="b3e2cb27-b9c2-4db7-bbeb-144bff760c6e" name="207_edw" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="aabb6b1a-171a-4c3f-8bb7-cffadfdf69f7" name="207_rst" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="e8c43877-946f-441d-9181-09e0b33911e5" name="207_edw_ai_turnover_feat" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="9d53febd-732b-44c6-b553-72291a57dc07" name="207_edw_ai_sale_feat" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="ef08cd47-bb20-4c7c-ae84-1dcff0b252fc" name="207_edw_ai_store_sale_add" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="ef8a267f-0bdf-4861-9b90-62a539f52654" name="207_edw_ai_product_predict_type" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="69b054f6-89df-4b63-a119-519a85bdfe5c" name="207_edw_ai_digihtal_warehouse" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="092ed200-9142-48c3-a446-c4cbbec37147" name="207_ods" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="8816b460-6652-4e8f-92cb-7478d3b306ce" name="sale_add_sum" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="70b5b342-41a0-4cbc-a7f3-567e034b19ba" name="sale_add_avg" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="4504d72b-c73c-439f-9922-8ff79b01ea94" name="207_edw_check_daily_stock" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="b60d026e-357b-4261-bd8f-b413f1f5c46a" name="207_update" url="http://192.168.200.207">
+        <fileTransfer host="192.168.200.207" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

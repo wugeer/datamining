@@ -1,0 +1,133 @@
+vnote_backup_file_826537664 /home/etl/文档/vnote_notebooks/vnotebook/xhw/留夫鸭spak代码/edw/dim_store.md
+# dim_store
+# 使用yarn调度
+
+```
+# coding: utf-8
+# 在执行前注意不要在服务器上面直接改,在另外一个schame上面改
+from pyspark import SparkContext,SparkConf
+from pyspark.sql import SQLContext,HiveContext,UDFRegistration,SparkSession
+from pyspark.sql.functions import udf
+import datetime
+import re
+import edw_module
+from pyspark.sql.types import Row, StructField, StructType, StringType, IntegerType
+# import sys
+
+spark = SparkSession.builder.master("yarn").appName("dim_product").enableHiveSupport().getOrCreate()
+
+get_current_timestamp = spark.udf.register("get_current_timestamp", edw_module.get_current_timestamp)
+get_phone_number = spark.udf.register("get_phone_number", edw_module.get_number)
+get_hash = spark.udf.register("get_hash", edw_module.get_hash)
+
+print("starting..........")
+sql_ods_ohem = """
+select empcode, empname from rbu_sxcp_ods_dev.ods_ohem
+"""
+sql_ods_oshp = """
+select 
+shpcode,
+shpname,
+shptype,
+shpclass,
+listnum,
+address,
+area,
+province,
+city,
+cityarea,
+transline,
+cycle,
+startdate,
+tel1,
+starttime,
+empdutyid,
+endtime,
+isinvalid
+from rbu_sxcp_ods_dev.ods_oshp
+"""
+sql_ods_ousr = """
+select usercode,username from rbu_sxcp_ods_dev.ods_ousr
+"""
+df_ods_ohem = sqlContext.sql(sql_ods_ohem)
+df_ods_ousr = sqlContext.sql(sql_ods_ousr)
+df_ods_oshp = sqlContext.sql(sql_ods_oshp)
+
+df_ods_oshp.createOrReplaceTempView("tmp_ods_oshp_spark")
+df_ods_ohem.createOrReplaceTempView("tmp_ods_ohem_spark")
+df_ods_ousr.createOrReplaceTempView("tmp_ods_ousr_spark")
+create_store_sql = """
+create  table rbu_sxcp_edw_dev.dim_store_1
+(store_code string,
+store_name string,
+store_class string,
+business_class string,
+price_list string,
+address string,
+area string,
+province string,
+city string,
+country_district string,
+longitude decimal (30, 8),
+latitude decimal (30, 8),
+distribute_route string,
+store_manager_code string,
+store_manager_name string,
+is_valid    int,
+order_cycle string,
+opening_date string,
+phone_number string,
+open_time string,
+close_time string,
+is_open int,
+parent_org_code string,
+etl_time string
+)
+stored as  parquet
+location '/liufuya/edw.db/dim_store_1'
+"""
+sqlContext.sql(create_store_sql)
+
+sql_select='''
+insert overwrite table rbu_sxcp_edw_dev.dim_store_1
+(select 
+t1.shpcode,
+t1.shpname,
+t1.shptype,
+t1.shpclass,
+t1.listnum,
+t1.address,
+t1.area,
+t1.province,
+t1.city,
+t1.cityarea,
+NULL,
+NULL,
+t1.transline,
+t2.empcode,
+t2.empname,
+'1',
+t1.cycle,
+t1.startdate,
+t1.tel1,  
+t1.starttime,
+t1.endtime,
+'1',
+t5.usercode,
+current_timestamp()
+from tmp_ods_oshp_spark t1
+left join tmp_ods_ohem_spark t2 on t1.empdutyid=t2.empcode
+left join tmp_ods_ousr_spark t5 on t2.empname=t5.username
+where t1.isinvalid='0')
+'''
+print("开始插入数据")
+result = spark.sql(sql_select)
+print("插入数据成功")
+df_ods_oshp.drop()
+df_ods_ohem.drop()
+df_ods_ousr.drop()
+print("删除临时表成功")
+
+print("process successfully!")
+print("=====================")
+```

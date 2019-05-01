@@ -1,0 +1,53 @@
+{
+    "created_time": "2019-01-02T10:28:15Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2019-01-02T10:28:23Z",
+            "modified_time": "2019-01-08T05:22:30Z",
+            "name": "逻辑.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2019-01-03T11:49:55Z",
+            "modified_time": "2019-01-18T13:28:36Z",
+            "name": "问题.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2019-01-08T05:18:15Z",
+            "modified_time": "2019-01-18T13:28:34Z",
+            "name": "crontab调度.md",
+            "tags": [
+            ]
+        }
+    ],
+    "sub_directories": [
+        {
+            "name": "留夫鸭spak代码"
+        },
+        {
+            "name": "sqoop脚本"
+        },
+        {
+            "name": "零售产品数据脱敏"
+        },
+        {
+            "name": "映射"
+        },
+        {
+            "name": "gp_ods_ods1准备数据"
+        }
+    ],
+    "version": "1"
+}

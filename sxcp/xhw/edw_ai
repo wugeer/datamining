@@ -1,0 +1,70 @@
+create table  store_sale_add
+(store_code string,
+product_code string,
+check_date string,
+sale_qty decimal (30, 8),
+sale_add_qty decimal (30, 8),
+sale_total_qty decimal (30, 8),
+group_buying_qty decimal (30, 8),
+end_qty decimal (30, 8),
+etl_time string
+)
+stored as  parquet
+location '/liufuya/edw.db/store_sale_add';
+
+
+create table  sale_feat
+(store_code string,
+product_code string,
+sale_date string,
+date_case string,
+turnover decimal (30, 8),
+temp decimal (30, 8),
+qty decimal (30, 8),
+recent_3 decimal (30, 8),
+recent_7 decimal (30, 8),
+etl_time string
+)
+stored as  parquet
+location '/liufuya/edw.db/sale_feat';
+
+
+create table  sale_add_sum
+(store_code string,
+product_code string,
+date_case string,
+sale_date string,
+max_hour decimal (30, 8),
+sum_3_sale decimal (30, 8),
+sum_4_sale decimal (30, 8),
+sum_5_sale decimal (30, 8),
+sum_6_sale decimal (30, 8),
+sum_7_sale decimal (30, 8),
+sum_8_sale decimal (30, 8),
+sum_9_sale decimal (30, 8),
+sum_10_sale decimal (30, 8),
+sum_11_sale decimal (30, 8),
+sum_12_sale decimal (30, 8),
+sum_13_sale decimal (30, 8),
+sum_14_sale decimal (30, 8),
+sum_15_sale decimal (30, 8),
+sum_16_sale decimal (30, 8),
+sum_17_sale decimal (30, 8),
+sum_18_sale decimal (30, 8),
+sum_19_sale decimal (30, 8),
+sum_20_sale decimal (30, 8),
+sum_21_sale decimal (30, 8),
+sum_22_sale decimal (30, 8),
+sum_23_sale decimal (30, 8),
+sum_0_sale decimal (30, 8),
+sum_1_sale decimal (30, 8),
+sum_2_sale decimal (30, 8),
+end_qty decimal (30, 8),
+etl_time string)
+stored as  parquet
+location '/liufuya/edw.db/sale_add_sum';
+
+
+
+SELECT store_code, product_code, sale_date, sale_total_qty, sale_price, turnover, `rank`, etl_time, year_month
+FROM rbu_sxcp_rst_dev.seven_days_turnover_ranking;

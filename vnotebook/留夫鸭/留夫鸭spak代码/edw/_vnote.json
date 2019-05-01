@@ -1,0 +1,58 @@
+{
+    "created_time": "2018-12-12T05:44:16Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-12-12T05:44:43Z",
+            "modified_time": "2018-12-17T01:35:09Z",
+            "name": "mid_sale_add_avg.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-12-12T12:40:56Z",
+            "modified_time": "2018-12-14T10:12:59Z",
+            "name": "dim_store.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-12-14T10:10:00Z",
+            "modified_time": "2018-12-14T10:13:01Z",
+            "name": "dim_product.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-12-24T02:18:22Z",
+            "modified_time": "2018-12-24T02:18:22Z",
+            "name": "fct_store_product_on_sale_2.md",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2019-01-03T04:17:08Z",
+            "modified_time": "2019-01-08T05:21:18Z",
+            "name": "选择的门店.md",
+            "tags": [
+            ]
+        }
+    ],
+    "sub_directories": [
+    ],
+    "version": "1"
+}

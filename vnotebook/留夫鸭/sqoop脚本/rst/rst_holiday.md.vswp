@@ -1,0 +1,63 @@
+vnote_backup_file_826537664 /home/etl/文档/vnote_notebooks/vnotebook/xhw/sqoop脚本/rst/rst.md
+# rst_holiday
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table rst_holiday --hive-database  rbu_sxcp_ods_dev  --delete-target-dir --hive-import --hive-table rst_holiday --hive-overwrite --null-string '\\N'  --null-non-string '\\N' --hive-drop-import-delims -m 1 -- --schema rst 
+
+# ods层的表导入成功
+--oshp    成功的导入语句
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_oshp --hive-database  rbu_sxcp_ods_dev  --delete-target-dir --hive-import --hive-table ods_oshp --hive-overwrite --null-string '\\N'  --null-non-string '\\N' --hive-drop-import-delims -m 1 -- --schema ods1 
+
+--ohem 
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_ohem --hive-database  rbu_sxcp_ods_dev  --delete-target-dir --hive-import --hive-table ods_ohem --hive-overwrite --null-string '\\N'  --null-non-string '\\N' --hive-drop-import-delims -m 1 -- --schema ods1 
+
+--ousr
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_ousr --hive-database  rbu_sxcp_ods_dev  --delete-target-dir --hive-import --hive-table ods_ousr --hive-overwrite --null-string '\\N'  --null-non-string '\\N' --hive-drop-import-delims -m 1 -- --schema ods1 
+
+--oitm
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_oitm --hive-database  rbu_sxcp_ods_dev  --delete-target-dir --hive-import --hive-table ods_oitm --hive-overwrite --null-string '\\N'  --null-non-string '\\N' --hive-drop-import-delims -m 1 -- --schema ods1 
+
+
+
+
+
+
+
+# ods层表未导入
+--customer_501
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_customer_501  --hive-database  rbu_sxcp_ods_dev  --delete-target-dir --hive-import --hive-table ods_customer_501 --hive-overwrite --null-string '\\N'  --null-non-string '\\N' --hive-drop-import-delims -m 1 -- --schema ods1 
+
+
+--ocus
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_ocus --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_ocus -- --schema ods1 
+
+--oitt
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_oitt --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_oitt -- --schema ods1  --direct 
+
+
+--oitg
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_oitg --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_oitg -- --schema ods1  --direct 
+
+--ostr
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_ostr --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_ostr -- --schema ods1  --direct 
+
+--owor
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_owor --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_owor -- --schema ods1 --direct 
+
+
+
+--owsl
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_owsl --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_owsl -- --schema ods1 --direct 
+
+
+--owsr
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_owsr --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_owsr-- --schema ods1 --direct 
+
+
+
+--product_bill_other
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_product_bill_other --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_product_bill_other -- --schema ods1 --direct
+
+--product_bill_shop
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_product_bill_shop --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_product_bill_shop -- --schema ods1 --direct
+
+--wsr1
+sqoop import --connect jdbc:postgresql://47.98.135.132:2345/gpdb --username gpadmin --password bigdata2018 --table ods_wsr1 --split-by id --delete-target-dir --hive-import --m 8 --hive-database  rbu_sxcp_ods_dev --hive-table ods_wsr1 -- --schema ods1 --direct

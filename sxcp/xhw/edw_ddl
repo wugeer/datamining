@@ -1,0 +1,54 @@
+     distribute_route string,
+     store_manager_code string,
+     store_manager_name string,
+     is_valid    int,
+     order_cycle string,
+     opening_date string,
+     phone_number string,
+     open_time string,
+     close_time string,
+     is_open int,
+     parent_org_code string,
+     etl_time string
+     )
+     stored as  parquet
+     location '/liufuya/edw.db/dim_store';
+
+
+create table dim_product
+(product_code string,
+product_name string,
+large_class string,
+middle_class string,
+small_class string,
+unit string,
+warranty decimal (30, 8),
+shelf_life decimal (30, 8),
+is_material int,
+is_valid int,
+min_order_qty decimal (30, 8),
+min_package_qty decimal (30, 8),
+safety_stock_qty decimal (30, 8),
+fixed_days_supply int,
+etl_time string
+)
+stored as  parquet
+location '/liufuya/edw.db/dim_product';
+
+create table dim_store_product
+(store_code string,
+store_name string,
+store_class string,
+product_code string,
+product_name string,
+sale_price decimal (30, 8),
+purchase_price decimal (30, 8),
+shelf_life decimal (30, 8),
+unit string,
+min_order_qty decimal (30, 8),
+min_display_qty decimal (30, 8),
+safety_stock_qty decimal (30, 8),
+etl_time string
+)
+stored as  parquet
+location '/liufuya/edw.db/dim_store_product';

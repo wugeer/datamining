@@ -1,0 +1,58 @@
+vnote_backup_file_826537664 /home/etl/文档/vnote_notebooks/vnotebook/xhw/留夫鸭spak代码/edw_ai/建表.md
+# 建表
+# store_sale_add
+```
+create table rbu_sxcp_edw_ai_dev.store_sale_add
+(store_code string,
+product_code string,
+check_date string,
+sale_qty decimal (30, 8),
+sale_add_qty decimal (30, 8),
+loss_qty decimal (30, 8),
+sale_total_qty decimal (30, 8),
+group_buying_qty decimal (30, 8),
+end_qty decimal (30, 8),
+etl_time string)
+partitioned by(month string)
+stored as  parquet
+location '/liufuya/edw.db/store_sale_add_ai'
+```
+
+
+
+# sale_add_avg
+```
+CREATE TABLE rbu_sxcp_edw_ai_dev.sale_add_avg(
+store_code string,
+product_code string,
+sale_date string,
+date_case string,
+avg_3_sale decimal(30,8),
+avg_4_sale decimal(30,8),
+avg_5_sale decimal(30,8),
+avg_6_sale decimal(30,8),
+avg_7_sale decimal(30,8),
+avg_8_sale decimal(30,8),
+avg_9_sale decimal(30,8),
+avg_10_sale decimal(30,8),
+avg_11_sale decimal(30,8),
+avg_12_sale decimal(30,8),
+avg_13_sale decimal(30,8),
+avg_14_sale decimal(30,8),
+avg_15_sale decimal(30,8),
+avg_16_sale decimal(30,8),
+avg_17_sale decimal(30,8),
+avg_18_sale decimal(30,8),
+avg_19_sale decimal(30,8),
+avg_20_sale decimal(30,8),
+avg_21_sale decimal(30,8),
+avg_22_sale decimal(30,8),
+avg_23_sale decimal(30,8),
+avg_0_sale decimal(30,8),
+avg_1_sale decimal(30,8),
+avg_2_sale decimal(30,8),
+etl_time string)
+stored as  parquet
+location '/liufuya/edw.db/sale_add_avg';
+
+```

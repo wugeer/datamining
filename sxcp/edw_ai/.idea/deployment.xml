@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always">
+    <serverData>
+      <paths name="207_edw">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw" local="$PROJECT_DIR$/../edw" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_edw_ai">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_edw_ai_digihtal_warehouse">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai/digital_warehouse" local="$PROJECT_DIR$/digital_warehouse" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_edw_ai_product_predict_type">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai/product_predict_type" local="$PROJECT_DIR$/product_predict_type" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_edw_ai_sale_feat">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai/sale_feat" local="$PROJECT_DIR$/sale_feat" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_edw_ai_store_sale_add">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai/store_sale_add" local="$PROJECT_DIR$/store_sale_add" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_edw_ai_turnover_feat">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai/turnover_feat" local="$PROJECT_DIR$/turnover_feat" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_edw_check_daily_stock">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw/check_daily_stock" local="$PROJECT_DIR$/../edw/check_daily_stock" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_ods">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/ods" local="$PROJECT_DIR$/../ods" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_rst">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/rst" local="$PROJECT_DIR$/../rst" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="207_update">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/update" local="$PROJECT_DIR$/../update" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sale_add_avg">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai/sale_add_avg" local="$PROJECT_DIR$/sale_add_avg" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sale_add_sum">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sxcp/edw_ai/sale_add_sum" local="$PROJECT_DIR$/sale_add_sum" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

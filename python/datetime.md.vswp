@@ -1,0 +1,12 @@
+vnote_backup_file_826537664 D:/doc/learn/python/datetime.md
+# datetime
+```
+import datetime
+
+```
+
+```puml
+@startuml
+Bob -> Alice : hello
+@enduml
+```

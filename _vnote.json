@@ -1,0 +1,28 @@
+{
+    "attachment_folder": "_v_attachments",
+    "created_time": "2019-01-06T08:00:23Z",
+    "files": [
+    ],
+    "image_folder": "",
+    "recycle_bin_folder": "_v_recycle_bin",
+    "sub_directories": [
+        {
+            "name": "python"
+        },
+        {
+            "name": "pyspark"
+        },
+        {
+            "name": "备忘录"
+        },
+        {
+            "name": "Linux"
+        },
+        {
+            "name": "工作笔记"
+        }
+    ],
+    "tags": [
+    ],
+    "version": "1"
+}

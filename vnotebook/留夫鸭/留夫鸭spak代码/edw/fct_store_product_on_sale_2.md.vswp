@@ -1,0 +1,32 @@
+vnote_backup_file_826537664 /home/etl/文档/vnote_notebooks/vnotebook/xhw/留夫鸭spak代码/edw/fct_store_product_on_sale_2.md
+# fct_store_product_on_sale_2
+```
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.master("yarn").appName("fct_sale_add").enableHiveSupport().getOrCreate()
+print("starting.....")
+
+insert_sql = """
+insert overwrite table rbu_sxcp_edw_dev.fct_store_product_on_sale_2
+(select
+a.store_code,
+a.store_name,
+a.product_code,
+a.product_name,
+b.large_class,
+b.unit,
+c.sale_price,
+c.purchase_price,
+b.shelf_life,
+b.min_order_qty,
+c.min_display_qty,
+a.etl_time
+from rbu_sxcp_edw_dev.fct_store_product_on_sale_1 a
+left join rbu_sxcp_edw_dev.dim_product_1 b on a.product_code=b.product_code
+left join rbu_sxcp_edw_dev.dim_store_product_1 c on c.store_code=a.store_code and c.product_code=a.product_code)
+"""
+print("开始插入数据")
+spark.sql(insert_sql)
+print("插入数据成功")
+print("end........")
+```

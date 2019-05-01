@@ -1,0 +1,6 @@
+vnote_backup_file_826537664 /home/etl/文档/vnote_notebooks/vnotebook/留夫鸭/问题.md
+# 问题
+# sqoop导出
+> sqoop 导出数据时,发现原表是没有重复的,但是导过去后发现有重复的
+
+sqoop export  --connect jdbc:postgresql://192.168.200.201:5432/linezone_retail_test --username postgres --password lzsj1701 --table rst_store_product_tmp --hcatalog-database rbu_sxcp_rst_dev --hcatalog-table  rst_product --m 1 -- --schema rst

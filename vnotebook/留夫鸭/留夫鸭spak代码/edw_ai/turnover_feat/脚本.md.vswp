@@ -1,0 +1,15 @@
+vnote_backup_file_826537664 /home/etl/文档/vnote_notebooks/vnotebook/xhw/留夫鸭spak代码/edw_ai/turnover_feat/脚本.md
+# 脚本
+```
+import os
+import threading
+
+item = [6, 7, 8, 9, 10, 11, 12]
+def jiaoben():
+    for i in item:
+        print(i)
+        os.system('spark2-submit --num-executors=8 --executor-memory=2G --executor-cores=8 --driver-memory 8g --conf spark.default.parallelism=200 --conf spark.yarn.executor.memoryOverhead=1024 --conf spark.storage.memoryFraction=0.9 turnover_feat_%s.py'%i)
+
+
+threading.Timer(1, jiaoben).start()
+```

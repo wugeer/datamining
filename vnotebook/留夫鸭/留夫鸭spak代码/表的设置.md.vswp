@@ -1,0 +1,24 @@
+vnote_backup_file_826537664 /home/etl/文档/vnote_notebooks/vnotebook/xhw/留夫鸭spak代码/表的设置.md
+# 表的设置
+> 有回删操作的,分区表按月分区;
+> rbu_sxcp_edw_dev: 
+> dim_product<=dim_product_1,
+>dim_store<=dim_store_1]
+>dim_store_product<=dim_store_product_1
+>fct_daily_stock<=fct_daily_stock_1
+>fct_pos_detail<=fct_pos_detail_1
+>fct_store_product_on_sale<=fct_store_product_on_sale_2
+>fct_io<=fct_io_1
+
+>rbu_sxcp_edw_ai_dev
+>fct_store_sale_add<=store_sale_add
+>mid_turnover_feat<=turnover_feat
+>mid_sale_feat<=sale_feat
+>mid_sale_add_avg<=sale_add_avg
+>mid_sale_add_sum<sale_add_sum
+>mid_digital_warehouse<=rst_digital_warehouse
+
+>rbu_sxcp_ods_dev
+>fct_weather<=rst_weather
+>rst_holiday<=rst_holiday  
+>store_category<=store_category

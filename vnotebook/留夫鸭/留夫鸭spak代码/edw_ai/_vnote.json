@@ -1,0 +1,30 @@
+{
+    "created_time": "2018-12-21T06:15:51Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-12-23T06:00:07Z",
+            "modified_time": "2018-12-23T06:00:07Z",
+            "name": "建表.md",
+            "tags": [
+            ]
+        }
+    ],
+    "sub_directories": [
+        {
+            "name": "store_sale_add"
+        },
+        {
+            "name": "turnover_feat"
+        },
+        {
+            "name": "sale_feat"
+        },
+        {
+            "name": "digital_warehouse"
+        }
+    ],
+    "version": "1"
+}

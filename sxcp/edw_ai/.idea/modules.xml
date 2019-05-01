@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../edw/.idea/edw.iml" filepath="$PROJECT_DIR$/../edw/.idea/edw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/edw_ai.iml" filepath="$PROJECT_DIR$/.idea/edw_ai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ods/.idea/ods.iml" filepath="$PROJECT_DIR$/../ods/.idea/ods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rst/.idea/rst.iml" filepath="$PROJECT_DIR$/../rst/.idea/rst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../update/.idea/update.iml" filepath="$PROJECT_DIR$/../update/.idea/update.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xhw/.idea/xhw.iml" filepath="$PROJECT_DIR$/../xhw/.idea/xhw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../数仓文档/.idea/数仓文档.iml" filepath="$PROJECT_DIR$/../数仓文档/.idea/数仓文档.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+{
+    "created_time": "2018-12-12T05:44:08Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "attachments": [
+            ],
+            "created_time": "2018-12-18T01:16:13Z",
+            "modified_time": "2018-12-24T09:59:36Z",
+            "name": "表的设置.md",
+            "tags": [
+            ]
+        }
+    ],
+    "sub_directories": [
+        {
+            "name": "edw"
+        },
+        {
+            "name": "rst"
+        },
+        {
+            "name": "edw_ai"
+        }
+    ],
+    "version": "1"
+}
